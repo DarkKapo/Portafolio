@@ -7,3 +7,23 @@
     border-radius: 50%;
     border: 2px solid black
 }
+
+#img-donet, #img-js {
+    width: 200px;
+    height: 190px
+}
+
+.seccion-bienvenida {
+    margin: 5rem 0 10rem 0;
+    color: white
+}
+
+.seccion-bienvenida h1 {
+    margin-bottom: 1rem
+}
+
+.seccion-bienvenida p {
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-size: 1.25rem
+}
