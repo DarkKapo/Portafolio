@@ -15,7 +15,7 @@ namespace Portafolio.Controllers
 
         public IActionResult Index()
         {
-            return View("Index","Rodrigo Quezada Candia");
+            return View();
         }
 
         public IActionResult Privacy()
