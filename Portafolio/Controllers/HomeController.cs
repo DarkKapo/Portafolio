@@ -8,15 +8,16 @@ namespace Portafolio.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IRepositorioProyectos repositorioProyectos;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IRepositorioProyectos repositorioProyectos)
         {
             _logger = logger;
+            this.repositorioProyectos = repositorioProyectos;
         }
 
         public IActionResult Index()
         {
-            var repositorioProyectos = new RepositorioProyectos();
             //Obtenemos los 3 para mostrar en el index
             //Tendremos otra vista donde se muestran todos
             var proyectos = repositorioProyectos.ObtenerProyectos().Take(3).ToList();
