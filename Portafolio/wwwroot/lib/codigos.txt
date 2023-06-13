@@ -1,0 +1,65 @@
+if (intValorReturn == 0)
+{
+    nombre_persona = "Persona No Registrada";
+    archivoSonido = "cedulanoregistrada";
+    pictureBox2.Image = Properties.Resources.btnaceptar_Rojo;
+}
+else if (intValorReturn == 1)
+{
+    nombre_persona = "Persona Sin Acceso a la Locacion";
+    pictureBox2.Image = Properties.Resources.btnaceptar_Rojo;
+    archivoSonido = "sinacceso";
+}
+else if (intValorReturn == 3)
+{
+    nombre_persona = "Sin Salida Previa";
+    pictureBox2.Image = Properties.Resources.btnaceptar_Rojo;
+    archivoSonido = "denegadosalida";
+}
+else if (intValorReturn == 4)
+{
+    nombre_persona = "Sin Entrada Previa";
+    pictureBox2.Image = Properties.Resources.btnaceptar_Rojo;
+    archivoSonido = "denegadoentrada";
+}
+else if (intValorReturn == 5)
+{
+    nombre_persona = "Contrato ya cubrio la cantidad de personas definidas";
+    pictureBox2.Image = Properties.Resources.btnaceptar_Rojo;
+    archivoSonido = "contratocubrio";
+}
+else if (intValorReturn == 6)
+{
+    nombre_persona = "Persona no hablitada por encuesta";
+    pictureBox2.Image = Properties.Resources.btnaceptar_Rojo;
+    archivoSonido = "encuesta";
+}
+else if (intValorReturn == 7)
+{
+    nombre_persona = "Persona sin induccion al dia";
+    pictureBox2.Image = Properties.Resources.btnaceptar_Rojo;
+    archivoSonido = "induccion";
+}
+else if (intValorReturn == 8)
+{
+    nombre_persona = "Persona Bloqueada";
+    pictureBox2.Image = Properties.Resources.btnaceptar_Rojo;
+    archivoSonido = "bloqueada";
+}
+else if (intValorReturn == 9)
+{
+    nombre_persona = "Contratista fuera de turno";
+    pictureBox2.Image = Properties.Resources.btnaceptar_Rojo;
+    archivoSonido = "contratista";
+}
+else if (intValorReturn == 2)
+{
+    if (entrada)
+    {
+        archivoSonido = "bienvenidopaseporfavor";
+    }
+    else
+    {
+        archivoSonido = "hastaluego";
+    }
+}
